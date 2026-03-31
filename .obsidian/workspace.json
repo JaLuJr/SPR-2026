@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "GitHub Setup"
             }
+          },
+          {
+            "id": "3f72e5bdaf97afd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project root/Assignment 01- Project Proposal.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Assignment 01- Project Proposal"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GitHub Setup.md",
+                "file": "project root/Assignment 01- Project Proposal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for GitHub Setup"
+              "title": "Backlinks for Assignment 01- Project Proposal"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GitHub Setup.md",
+                "file": "project root/Assignment 01- Project Proposal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from GitHub Setup"
+              "title": "Outgoing links from Assignment 01- Project Proposal"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GitHub Setup.md",
+                "file": "project root/Assignment 01- Project Proposal.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of GitHub Setup"
+              "title": "Outline of Assignment 01- Project Proposal"
             }
           }
         ]
@@ -169,14 +184,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "6def1331f4bc4afc",
+  "active": "3f72e5bdaf97afd6",
   "lastOpenFiles": [
+    "README.md",
+    "project root/Assignment 01- Project Proposal.md",
+    "Untitled.md",
+    "GitHub Setup.md",
     "project root/assets",
     "ass",
     "project root/css",
     "project root/index",
-    "project root",
-    "README.md",
-    "GitHub Setup.md"
+    "project root"
   ]
 }
