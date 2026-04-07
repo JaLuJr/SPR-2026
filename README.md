@@ -4,7 +4,7 @@ A web-based interactive experience that demonstrates and teaches inclusive visua
 
 ## 🔗 4/5/2026- Live Demo
 You can view the deployed site here:  
-[Open the Visual Accessibility Project](https://github.com/JaLuJr/SPR-2026/blob/main/project%20root/index.html)
+[Open the Visual Accessibility Project](https://github.com/JaLuJr/SPR-2026/blob/main/index.html)
 
 ## 🌟 Overview
 
