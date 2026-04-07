@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Accessibility Project</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    nav a {
+      margin-right: 15px;
+    }
+
+    .high-contrast {
+      background: black;
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Visual Accessibility Project</h1>
+
+  <p>
+    This project explores simple accessibility improvements for web interfaces.
+    For this exercise, the goal is to deploy a working page and verify that
+    continuous deployment is functioning.
+  </p>
+
+  <button onclick="document.body.classList.toggle('high-contrast')">
+    Toggle High Contrast
+  </button>
+
+  <nav>
+    <a href="page2.html">Go to Page 2</a>
+  </nav>
+</body>
+</html>
