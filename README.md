@@ -2,6 +2,10 @@
 
 A web-based interactive experience that demonstrates and teaches inclusive visual design through adjustable modes, simulations, and educational content.
 
+## 🔗 4/5/2026- Live Demo
+You can view the deployed site here:  
+[Open the Visual Accessibility Project](https://jalujr.github.io/SPR-2026/)
+
 
 
 ## 🌟 Overview
