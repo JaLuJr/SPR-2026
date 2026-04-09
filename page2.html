@@ -4,11 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page 2</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    nav a {
+      margin-right: 15px;
+    }
+
+    .high-contrast {
+      background: black;
+      color: yellow;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Page 2</h1>
   <p>This is a placeholder second page for navigation testing.</p>
+
+    </p>
+
+  <button onclick="document.body.classList.toggle('high-contrast')">
+    Toggle High Contrast
+  </button>
 
   <a href="index.html">Back to Home</a>
 </body>
