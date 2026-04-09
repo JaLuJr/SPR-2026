@@ -16,9 +16,50 @@
       margin-right: 15px;
     }
 
+    /* Default button style */
+    button {
+      background: #e0e0e0;
+      color: black;
+      border: 2px solid #555;
+      padding: 10px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      border-radius: 6px;
+    }
+
+    /* Hover effect */
+    button:hover {
+      background: #cfcfcf;
+      border-color: #222;
+    }
+
+    /* Click effect */
+    button:active {
+      background: #b5b5b5;
+      transform: scale(0.97);
+    }
+
+    /* High-contrast mode */
     .high-contrast {
       background: black;
       color: yellow;
+    }
+
+    /* Button in high-contrast mode */
+    .high-contrast button {
+      background: yellow;
+      color: black;
+      border-color: yellow;
+    }
+
+    .high-contrast button:hover {
+      background: #ffea00;
+    }
+
+    .high-contrast button:active {
+      background: #e6d200;
+      transform: scale(0.97);
     }
   </style>
 </head>
