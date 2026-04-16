@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  transition: 0.3s ease;
+}
+
+nav a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+button {
+  background: #e0e0e0;
+  color: black;
+  border: 2px solid #555;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background: #cfcfcf;
+}
+
+.high-contrast {
+  background: black;
+  color: yellow;
+}
+
+.dyslexia {
+  font-family: "Comic Sans MS", "Arial", sans-serif;
+  letter-spacing: 1px;
+}
+
+.large-text {
+  font-size: 22px;
+}
+
+.soft-mode {
+  background: #f4e7c5;
+  color: #3a2f1d;
+}
+
+.blue-yellow {
+  background: #002b7f;
+  color: #ffea00;
+}
+
+.red-black {
+  background: #8b0000;
+  color: white;
+}
