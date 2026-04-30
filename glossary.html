@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Glossary</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="modes.js" defer></script>
+
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .glossary-item {
+      background: #e0e0e0;
+      border: 2px solid #555;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+
+    .glossary-item:hover {
+      background: #cfcfcf;
+    }
+
+    .glossary-term {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .glossary-content {
+      display: none;
+      margin-top: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #555;
+    }
+
+    .preview-box {
+      margin-top: 12px;
+      padding: 12px;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .simulate-dyslexia {
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .simulate-lowvision {
+      filter: blur(2px) brightness(0.7);
+    }
+
+    .simulate-protanopia {
+      filter: grayscale(100%) sepia(100%) hue-rotate(-50deg);
+    }
+
+    .simulate-deuteranopia {
+      filter: grayscale(100%) sepia(100%) hue-rotate(20deg);
+    }
+
+    .simulate-tritanopia {
+      filter: grayscale(100%) sepia(100%) hue-rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Accessibility</a>
+    <a href="modes.html">Visual Modes</a>
+    <a href="checklist.html">Checklist</a>
+    <a href="demo.html">Interactive Demo</a>
+    <a href="glossary.html">Glossary</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Accessibility Glossary</h1>
+
+    <p><strong>What is Visual Accessibility?</strong><br>
+      Visual accessibility ensures that digital content can be used by people with low vision, dyslexia, color blindness, and other visual processing needs.
+    </p>
+
+    <p><strong>Why It Matters:</strong></p>
+    <ul>
+      <li>Improves readability for millions of users</li>
+      <li>Supports people with dyslexia through specialized fonts</li>
+      <li>Helps color-blind users interpret information correctly</li>
+      <li>Reduces eye strain with low-brightness modes</li>
+      <li>Creates inclusive digital environments</li>
+    </ul>
+
+    <p><strong>Who Benefits?</strong><br>
+      People with low vision, dyslexia, ADHD, migraines, color blindness, and even users in bright sunlight or low-light environments.
+    </p>
+
+    <hr><br>
+
+    <!-- Dyslexia -->
+    <div class="glossary-item" onclick="toggleGlossary(this)">
+      <div class="glossary-term">Dyslexia</div>
+      <div class="glossary-content">
+        <p>Dyslexia affects reading fluency, decoding, and letter recognition. Fonts with heavier bottoms and wider spacing can improve readability.</p>
+
+        <button onclick="simulate(event, 'dyslexia')">See What They See</button>
+
+        <div class="preview-box" id="preview-dyslexia">
+          This is sample text used to simulate dyslexia.
+        </div>
+      </div>
+    </div>
+
+    <!-- Low Vision -->
+    <div class="glossary-item" onclick="toggleGlossary(this)">
+      <div class="glossary-term">Low Vision</div>
+      <div class="glossary-content">
+        <p>Low vision includes blurred vision, reduced contrast sensitivity, and difficulty reading small text.</p>
+
+        <button onclick="simulate(event, 'lowvision')">See What They See</button>
+
+        <div class="preview-box" id="preview-lowvision">
+          This is sample text used to simulate low vision.
+        </div>
+      </div>
+    </div>
+
+    <!-- Color Blindness -->
+    <div class="glossary-item" onclick="toggleGlossary(this)">
+      <div class="glossary-term">Color Blindness</div>
+      <div class="glossary-content">
+        <p>Color blindness affects how users perceive red, green, and blue hues. There are multiple types:</p>
+
+        <button onclick="simulate(event, 'protanopia')">Protanopia</button>
+        <button onclick="simulate(event, 'deuteranopia')">Deuteranopia</button>
+        <button onclick="simulate(event, 'tritanopia')">Tritanopia</button>
+
+        <div class="preview-box" id="preview-colorblind">
+          This is a color sample: <br><br>
+          <div style="width:100%; height:40px; background: linear-gradient(to right, red, green, blue);"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+    function toggleGlossary(item) {
+      const content = item.querySelector('.glossary-content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function simulate(event, type) {
+      event.stopPropagation();
+
+      const previewMap = {
+        dyslexia: 'preview-dyslexia',
+        lowvision: 'preview-lowvision',
+        protanopia: 'preview-colorblind',
+        deuteranopia: 'preview-colorblind',
+        tritanopia: 'preview-colorblind'
+      };
+
+      const previewId = previewMap[type];
+      const box = document.getElementById(previewId);
+
+      box.className = 'preview-box';
+
+      if (type === 'dyslexia') box.classList.add('simulate-dyslexia');
+      if (type === 'lowvision') box.classList.add('simulate-lowvision');
+      if (type === 'protanopia') box.classList.add('simulate-protanopia');
+      if (type === 'deuteranopia') box.classList.add('simulate-deuteranopia');
+      if (type === 'tritanopia') box.classList.add('simulate-tritanopia');
+    }
+  </script>
+
+</body>
+</html>
+<footer>
+  <p>© 2026 Visual Accessibility Project — Built by Jarian Lauderdale</p>
+</footer>
