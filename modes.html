@@ -39,4 +39,50 @@
 </html>
 <footer>
   <p>© 2026 Visual Accessibility Project — Built by Jarian Lauderdale</p>
-</footer>
+</footer><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Modes</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="modes.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Accessibility</a>
+    <a href="modes.html">Visual Modes</a>
+    <a href="checklist.html">Checklist</a>
+    <a href="demo.html">Interactive Demo</a>
+    <a href="glossary.html">Glossary</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- 🔥 Global Dark Mode Button -->
+    <button class="nav-toggle" onclick="toggleContrast()">Dark Mode</button>
+  </nav>
+
+  <h1>Try Different Visual Modes</h1>
+
+  <p>Click the buttons below to see how different accessibility modes affect readability.</p>
+
+  <button onclick="toggleContrast()">High Contrast</button>
+  <button onclick="toggleDyslexia()">Dyslexia Font</button>
+  <button onclick="toggleLargeText()">Large Text</button>
+  <button onclick="toggleSoftMode()">Low Brightness</button>
+  <button onclick="toggleBlueYellow()">Blue/Yellow Mode</button>
+  <button onclick="toggleRedBlack()">Red/Black Mode</button>
+<button class="nav-toggle" onclick="resetAllModes()">Reset</button>
+
+  <p>
+    These modes help users with different needs — from dyslexia to color blindness
+    to low vision. Try them all!
+  </p>
+
+  <footer>
+    <p>© 2026 Visual Accessibility Project — Built by Jarian Lauderdale</p>
+  </footer>
+</body>
+</html>

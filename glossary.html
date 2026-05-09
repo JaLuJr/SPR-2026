@@ -85,6 +85,9 @@
     <a href="demo.html">Interactive Demo</a>
     <a href="glossary.html">Glossary</a>
     <a href="contact.html">Contact</a>
+
+    <!-- 🔥 Global Dark Mode Button -->
+    <button class="nav-toggle" onclick="toggleContrast()">Dark Mode</button>
   </nav>
 
   <div class="container">
@@ -156,6 +159,9 @@
 
   </div>
 
+  <footer>
+    <p>© 2026 Visual Accessibility Project — Built by Jarian Lauderdale</p>
+  </footer>
 
   <script>
     function toggleGlossary(item) {
@@ -186,9 +192,7 @@
       if (type === 'tritanopia') box.classList.add('simulate-tritanopia');
     }
   </script>
+<button class="nav-toggle" onclick="resetAllModes()">Reset</button>
 
 </body>
 </html>
-<footer>
-  <p>© 2026 Visual Accessibility Project — Built by Jarian Lauderdale</p>
-</footer>

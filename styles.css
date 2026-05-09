@@ -22,8 +22,31 @@ button {
   margin-right: 10px;
 }
 
+.nav-toggle {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-left: 20px;
+  background: #e0e0e0;
+  border: 2px solid #555;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-toggle:hover {
+  background: #ffd900;
+  color: #000;
+  transform: scale(1.07);
+  outline: 3px solid #000;
+  box-shadow: 0 0 12px rgba(255,217,0,0.9);
+}
+
 button:hover {
-  background: #cfcfcf;
+  background: #ffd900;                 /* bright yellow for visibility */
+  color: #000;                         /* strong contrast */
+  transform: scale(1.07);              /* motion cue */
+  outline: 3px solid #000;             /* visible for low-vision users */
+  box-shadow: 0 0 12px rgba(255,217,0,0.9);
 }
 
 .high-contrast {
@@ -53,4 +76,25 @@ button:hover {
 .red-black {
   background: #8b0000;
   color: white;
+}
+
+.high-contrast button:hover {
+  background: yellow;
+  color: black;
+  outline: 3px solid yellow;
+  box-shadow: 0 0 14px yellow;
+}
+
+.blue-yellow button:hover {
+  background: #ffea00;
+  color: #002b7f;
+  outline: 3px solid #ffea00;
+  box-shadow: 0 0 14px #ffea00;
+}
+
+.red-black button:hover {
+  background: #ff4d4d;
+  color: #000;
+  outline: 3px solid #ff4d4d;
+  box-shadow: 0 0 14px #ff4d4d;
 }
