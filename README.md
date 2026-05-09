@@ -1,86 +1,88 @@
-# Visual Accessibility Experience
+# Visual Accessibility Project — P02 Final MVP  
+Built by **Jarian Lauderdale**  
+Texas Tech University — CMAP 4303
 
-A web-based interactive experience that demonstrates and teaches inclusive visual design through adjustable modes, simulations, and educational content.
+---
 
-## 🔗 4/5/2026- Live Demo
-You can view the deployed site here:  
-[Open the Visual Accessibility Project](https://jalujr.github.io/SPR-2026/)
+## 📌 Overview  
+This project explores how visual accessibility features can improve readability, usability, and inclusivity for users with diverse visual needs.  
+The site includes multiple pages, interactive elements, and persistent visual modes that help simulate and support different accessibility challenges.
 
-## 🌟 Overview
+This is the final MVP for Project 02 and expands significantly on the foundation built in Project 01.
 
-The **Visual Accessibility Experience** is a learning-focused web project designed to help users understand how visual accessibility impacts real people. Through interactive tools, visual mode adjustments, and guided examples, the site highlights how thoughtful design choices can make digital spaces more inclusive, comfortable, and beautiful for everyone.
+---
 
-This project is built with accessibility-first principles and aims to inspire designers, students, and everyday users to see the web through new eyes.
+## 🌐 Live Pages  
+- **Home**  
+- **About Accessibility**  
+- **Visual Modes**  
+- **Checklist**  
+- **Interactive Demo**  
+- **Glossary**  
+- **Contact**
 
+Each page includes consistent navigation, styling, and accessibility support.
 
+---
 
-## 🎯 Project Goals
+## 🎨 Accessibility Features  
+This project includes a full suite of visual accessibility modes:
 
-- Showcase accessible design as both functional and artistic  
-- Help users understand visual challenges such as low contrast, glare, or dyslexia  
-- Provide hands-on tools that demonstrate how design decisions affect readability  
-- Encourage empathy and awareness through interactive learning  
-- Offer practical guidance for creating more inclusive digital experiences  
+### **Global Modes (Persistent Across All Pages)**
+- **High Contrast / Dark Mode**  
+- **Dyslexia-Friendly Font**  
+- **Large Text Mode**  
+- **Low Brightness Mode**  
+- **Blue/Yellow Color Mode**  
+- **Red/Black Color Mode**  
+- **Reset All Modes Button** (returns the site to default)
 
+All modes are saved using `localStorage`, so user preferences follow them across the entire site.
 
+---
 
-## 👥 Target Audience
+## 🧠 Interactive Elements  
+### **Visual Modes Page**  
+Users can toggle multiple accessibility modes and see how each affects readability.
 
-This project is created for:
+### **Glossary Page**  
+Expandable glossary items with simulations for:
+- Dyslexia  
+- Low Vision  
+- Protanopia  
+- Deuteranopia  
+- Tritanopia  
 
-- Designers and developers exploring accessibility best practices  
-- Students learning about inclusive design  
-- Users with visual sensitivities or low vision  
-- Anyone curious about how accessibility improves digital experiences  
+### **Interactive Demo Page**  
+Users can test accessibility modes on sample text.
 
+### **Contact Page**  
+Simple form for user feedback.
 
+---
 
-## 🚀 Features
+## 🛠️ Technologies Used  
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6)**  
+- `localStorage` for persistent accessibility settings
 
-### **Prototype (Week 05)**
-- **Adjustable Visual Modes**  
-  High contrast, low light, dyslexia-friendly, and large-text modes.
-- **Accessible Typography Demo**  
-  Examples showing how font choices and spacing affect readability.
-- **Color Contrast Checker**  
-  Simple comparisons of accessible vs. inaccessible color pairings.
-- **Introductory Educational Content**  
-  Clear explanations of why visual accessibility matters.
-- **Responsive Layout**  
-  Mobile-friendly design that adapts across devices.
+---
 
-### **Final MVP (Week 08)**
-- **“See Through New Eyes” Simulator**  
-  Visual condition previews using blur, glare, and low-contrast filters.
-- **Customizable Accessibility Settings**  
-  Sliders for brightness, contrast, text size, and spacing.
-- **Design Guidelines Section**  
-  Best practices for accessible visual design.
-- **User Preference Storage**  
-  Saves user settings using `localStorage`.
-- **Enhanced Visual Storytelling**  
-  Subtle animations and illustrations that celebrate inclusive design.
+## 🔧 Improvements from Project 01  
+This project demonstrates clear iteration and growth:
 
+- Added **persistent visual modes** across all pages  
+- Added **global Dark Mode toggle** in the navigation bar  
+- Added **Reset All Modes** button  
+- Improved hover states for accessibility  
+- Added multiple new pages (Glossary, Demo, Contact, Checklist)  
+- Added color blindness simulations  
+- Improved structure, spacing, and consistency  
+- Cleaned up HTML and fixed footer placement  
+- Strengthened accessibility focus and user experience  
 
-
-## 🛠️ Tools & Technologies
-
-- **HTML, CSS, JavaScript** — Core technologies for full control over visuals and interactions  
-- **Visual Studio Code** — Development environment with accessibility-focused extensions  
-- **Git + GitHub** — Version control and hosting via GitHub Pages  
-- **Wireframing Tools** — For planning layouts and interactions  
-- **WCAG Contrast Checkers** — For validating color accessibility  
-- **AI Assistants** — Used for brainstorming, content generation, and troubleshooting  
-
-
-
-## ⚠️ Risks & Challenges
-
-- **Visual Condition Simulation**  
-  Achieving realistic effects may require experimentation with CSS filters or JavaScript.
-- **Balancing Aesthetics & Accessibility**  
-  Ensuring the site remains beautiful without compromising usability.
-- **Scope Management**  
-  Avoiding feature creep to stay on schedule.
-- **LocalStorage Learning Curve**  
-  Implementing user preference saving for the first time.
+## ✨ Author  
+**Jarian Lauderdale**  
+Visual Accessibility Project — Spring 2026  
+Texas Tech University
