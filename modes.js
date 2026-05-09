@@ -1,12 +1,14 @@
 window.onload = function () {
   const modes = [
-    "high-contrast",
-    "dyslexia",
-    "large-text",
-    "soft-mode",
-    "blue-yellow",
-    "red-black"
-  ];
+  "high-contrast",
+  "dyslexia",
+  "large-text",
+  "soft-mode",
+  "blue-yellow",
+  "red-black",
+  "dark-mode"
+];
+
 
   modes.forEach(mode => {
     if (localStorage.getItem(mode) === "on") {
@@ -18,6 +20,11 @@ window.onload = function () {
 function toggleContrast() {
   document.body.classList.toggle("high-contrast");
   saveMode("high-contrast");
+}
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  saveMode("dark-mode");
 }
 
 function toggleDyslexia() {
