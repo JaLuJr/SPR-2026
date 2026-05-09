@@ -149,6 +149,7 @@
         <button onclick="simulate(event, 'protanopia')">Protanopia</button>
         <button onclick="simulate(event, 'deuteranopia')">Deuteranopia</button>
         <button onclick="simulate(event, 'tritanopia')">Tritanopia</button>
+        <button class="nav-toggle" onclick="resetAllModes()">Reset</button>
 
         <div class="preview-box" id="preview-colorblind">
           This is a color sample: <br><br>
@@ -192,7 +193,6 @@
       if (type === 'tritanopia') box.classList.add('simulate-tritanopia');
     }
   </script>
-<button class="nav-toggle" onclick="resetAllModes()">Reset</button>
 
 </body>
 </html>
